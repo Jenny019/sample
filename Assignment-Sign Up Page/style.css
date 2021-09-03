@@ -1,0 +1,120 @@
+ body{                               /* For training assignment 1, made by Jingmei Yang */
+        margin: 0;
+        padding: 0;
+        background: white;
+        font-family: sans-serif;
+    }
+
+    *{
+        box-sizing: border-box;
+    } 
+
+    .box{  /* for the whole box */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 650px;
+        padding: 40px;
+        border-radius: 20px;
+    }
+    
+    .box h2{  /* For Sign up */
+        margin: 0 0 25px;
+        padding: 0;
+        color: black;
+        text-align: center;
+    }
+
+    .box .inputBox{
+        position: relative;
+        height: 50px;         
+    } 
+
+    .box .inputBox input{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+        outline: none;
+        border-color: grey;
+        border-bottom-color: grey;
+        border-style: solid; 
+    }
+    
+    .box .inputBox input:focus{
+        border-color: lightblue;
+        border-style: solid;
+        padding: 5px 0;
+        font-size: 16px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+        border-bottom-color:lightblue;
+        outline: none;
+    }
+
+    #textbox1, #textbox2{ /* For firstname,lastname,password and confirm password. */
+       display: inline-block;
+       width: 49%;
+       border-radius: 5px; 
+    } 
+
+    #textbox3 {   /* For email and mobile No. */
+        display:block;
+        width:99%;
+        border-radius: 5px;
+    }
+   
+    .box input[type = 'submit']{
+        display:inline-block;
+        height: 40px;
+        width: 49%;  
+        font-size: 16px;    
+        color: white;
+        border-color: white;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        
+    }
+
+    #register{ /* Change rgister's background color. */
+        background-color: #0099FF;
+    }
+
+    #sign{    /* Change sign's background color. */
+        background-color: #66FF66;
+    }
+
+    input[type = 'sumbit']:hover {
+        background-color: #456ca0;
+    }
+    
+    span {
+        color:#0099FF;
+    }
+
+   .wrapper {
+       display:grid;
+       grid-template-columns: 120px 1fr;
+       align-items: start;
+       padding: 15px 10px;
+       border:none;
+   }
+
+   .wrapper .left {
+       width: 100px;
+       border: none;
+       grid-column: 1;
+   }
+
+   .warpper .right {      
+       margin-left: 20px;
+       font-size: 12px;
+       border:none;
+       grid-column: 1;
+   }
+    
+
+
